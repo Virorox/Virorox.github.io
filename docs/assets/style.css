@@ -253,3 +253,59 @@ body {
     }
 
 }
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill-box{
+background:#1f3b4a;
+padding:15px;
+border-radius:8px;
+text-align:center;
+}
+
+.personal-grid{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.personal-card{
+background:#1f3b4a;
+padding:20px;
+border-radius:10px;
+width:250px;
+}
+
+.map-img{
+max-width:800px;
+width:90%;
+margin:30px auto;
+display:block;
+}
+
+.logo-carousel{
+display:flex;
+gap:80px;
+animation:scroll 25s linear infinite;
+}
+
+.logo-carousel img{
+height:60px;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+
+.cv-buttons{
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
