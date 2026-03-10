@@ -15,7 +15,7 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
+<meta name="description" content="International Investment & Trade Strategist specialized in FDI attraction, economic diplomacy and data-driven investment strategy across Europe and Latin America.">
 <script>
 
 function setLanguage(lang){
@@ -36,28 +36,32 @@ document.getElementById("exports-text").innerText="Impacto en exportaciones"
 document.getElementById("profile-text").innerText=
 "Estratega en inversión y comercio internacional especializado en atracción de inversión extranjera, análisis de mercados y diplomacia económica. Experiencia en la Organización Mundial del Comercio en Ginebra, Europa y América Latina generando portafolios de inversión superiores a USD 400 millones mediante inteligencia de datos y relaciones institucionales."
 
-}
+document.getElementById("read-article-1").innerText="Leer artículo"
+document.getElementById("read-article-2").innerText="Leer artículo"}
 
 if(lang==="fr"){
 
 document.getElementById("title-profile").innerText="Profil Professionnel"
 document.getElementById("title-documents").innerText="Portefeuille et Documentation"
 document.getElementById("title-contact").innerText="Contact"
-
+document.getElementById("read-article-1").innerText="Lire l'article"
+document.getElementById("read-article-2").innerText="Lire l'article"
 }
 
 if(lang==="it"){
 
 document.getElementById("title-profile").innerText="Profilo Professionale"
 document.getElementById("title-documents").innerText="Portfolio e Documentazione"
-
+document.getElementById("read-article-1").innerText="Leggi l'articolo"
+document.getElementById("read-article-2").innerText="Leggi l'articolo"
 }
 
 if(lang==="de"){
 
 document.getElementById("title-profile").innerText="Berufsprofil"
 document.getElementById("title-documents").innerText="Portfolio und Dokumentation"
-
+document.getElementById("read-article-1").innerText="Artikel lesen"
+document.getElementById("read-article-2").innerText="Artikel lesen"
 }
 
 if(lang==="en"){
@@ -130,16 +134,8 @@ Camilo Vicaría
     </a>
 </div>
 
-<div class="language-switch">
-
-<button onclick="setLanguage('en')">EN</button>
-<button onclick="setLanguage('es')">ES</button>
-<button onclick="setLanguage('fr')">FR</button>
-<button onclick="setLanguage('it')">IT</button>
-<button onclick="setLanguage('de')">DE</button>
-
 </div>
-            
+
 </section>
 
 <section class="profile">
@@ -250,8 +246,6 @@ document.getElementById("map-image").src="assets/map-worked.png"
 }
 
 </script>
-</body>
-</html>
     
 <!-- DOCUMENTS -->
 <section class="documents">
@@ -288,10 +282,10 @@ document.getElementById("map-image").src="assets/map-worked.png"
 </div>
 </a>
 
-<a href="assets/Diplomas.pdf" class="hex-item">
+<a href="assets/Diplomas and Transcripts.pdf" class="hex-item">
 <div class="hex-inner">
 <i class="fas fa-graduation-cap"></i>
-<span>Diplomas</span>
+<span>Diplomas and Academic Transcripts</span>
 </div>
 </a>
 
@@ -302,6 +296,27 @@ document.getElementById("map-image").src="assets/map-worked.png"
 </div>
 </a>
 
+<a href="assets/AmericanUniversity-HumanRights.pdf" class="hex-item">
+<div class="hex-inner">
+<i class="fas fa-scale-balanced"></i>
+<span>Human Rights Certificate</span>
+</div>
+</a>
+
+<a href="assets/TarjetaProfesional-Abogado.pdf" class="hex-item">
+<div class="hex-inner">
+<i class="fas fa-gavel"></i>
+<span>Professional License (Lawyer)</span>
+</div>
+</a>
+
+<a href="assets/EmploymentCertificates.pdf" class="hex-item">
+<div class="hex-inner">
+<i class="fas fa-briefcase"></i>
+<span>Employment Certificates</span>
+</div>
+</a>
+    
 </div>
 
 </section>
@@ -318,21 +333,13 @@ document.getElementById("map-image").src="assets/map-worked.png"
 
 <div class="carousel-track">
 
-<div class="logo-box">
-<img src="assets/procolombia.png">
-</div>
+<img src="assets/procolombia-logo.png">
 
-<div class="logo-box">
-<img src="assets/wto.png">
-</div>
+<img src="assets/wto-logo.png">
 
-<div class="logo-box">
-<img src="assets/sc-commerce.png">
-</div>
+<img src="assets/sc-commerce-logo.png">
 
-<div class="logo-box">
-<img src="assets/baker.png">
-</div>
+<img src="assets/baker-mckenzie-logo.png">
 
 </div>
 
@@ -356,7 +363,7 @@ document.getElementById("map-image").src="assets/map-worked.png"
 
 <a href="https://amchamcolombia.wordpress.com/2016/03/31/marcas-en-el-capitulo-de-propiedad-intelectual-del-tpp-si-o-no/" target="_blank">
 
-Read article
+<span id="read-article-1">Read article</span>
 
 </a>
 
@@ -370,7 +377,7 @@ Read article
 
 <a href="https://amchamcolombia.wordpress.com/2015/07/23/america-latina-destino-de-inversion-en-el-2015/" target="_blank">
 
-Read article
+<span id="read-article-2">Read article</span>
 
 </a>
 
@@ -379,7 +386,23 @@ Read article
 </div>
 
 </section> 
-    
+    <section class="associations">
+
+<h2 id="title-associations">Professional Associations</h2>
+
+<div class="associations-grid">
+
+<a href="https://www.accoldi.org/" target="_blank">
+<img src="assets/accoldi-logo.png">
+</a>
+
+<a href="https://www.juristesfrancocolombiens.com/" target="_blank">
+<img src="assets/juristes-logo.png">
+</a>
+
+</div>
+
+</section>
 <!-- CONTACT -->
 <section class="contact">
 
