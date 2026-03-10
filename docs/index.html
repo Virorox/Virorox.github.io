@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Camilo Vicaría | International Investment & Trade</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,13 +72,54 @@ document.getElementById("title-documents").innerText="Portfolio & Documentation"
 </script>
     
 <body>
+<header class="topbar">
 
+<div class="logo-name">
+Camilo Vicaría
+</div>
+
+<div class="language-switch">
+
+<button onclick="setLanguage('en')">EN</button>
+<button onclick="setLanguage('es')">ES</button>
+<button onclick="setLanguage('fr')">FR</button>
+<button onclick="setLanguage('de')">DE</button>
+<button onclick="setLanguage('it')">IT</button>
+
+</div>
+
+</header>
+    
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-content">
 
-        <div class="hexagon">
-            <img src="assets/Camilo Vicaria.jpeg" alt="Camilo Vicaría">
+<div class="hero-grid">
+
+<div class="hero-photo">
+
+<div class="hexagon">
+<img src="assets/Camilo Vicaria.jpeg">
+</div>
+
+</div>
+
+<div class="about-me">
+
+<h2 id="title-about">About me</h2>
+
+<ul class="about-list">
+
+<li>Dual citizen: Colombia & Germany</li>
+
+<li>Single, no children</li>
+
+<li>Driving license: Colombia & Germany</li>
+
+<li>Experience across Europe & Latin America</li>
+
+<li>Multilingual: EN · ES · DE · FR · IT</li>
+
+</ul>
 <div class="cv-buttons">
     <a href="assets/Camilo Vicaría CV EN 2026.pdf" target="_blank" class="primary-btn">
         Download CV (EN)
@@ -100,212 +142,160 @@ document.getElementById("title-documents").innerText="Portfolio & Documentation"
             
 </section>
 
+<section class="profile">
+
+<h2 id="title-profile">Professional Profile</h2>
+
+<p id="profile-text">
+
+Investment and Trade Strategist | Data Scientist specialized in investment attraction, international trade, and economic diplomacy. Experience across Europe and Latin America generating investment pipelines exceeding USD 400M through institutional engagement and data intelligence.
+
+</p>
+
+</section>    
 
 <!-- EXECUTIVE HIGHLIGHTS -->
-<section class="highlights">
+<section class="results">
 
-    <div class="highlight-box">
-        <h2>$423M+</h2>
-        <p id="capital-text">Capital attracted</p>
-    </div>
+<h2 id="title-results">My results in brief</h2>
 
-    <div class="highlight-box">
-        <h2>1,286</h2>
-        <p id="jobs-text">Jobs supported</p>
-    </div>
+<div class="results-grid">
 
-    <div class="highlight-box">
-        <h2>+52%</h2>
-        <p id="exports-text">Export growth impact</p>
-    </div>
+<div class="metric">
+<h3>$423M+</h3>
+<p id="capital-text">Capital attracted</p>
+</div>
+
+<div class="metric">
+<h3>1,286</h3>
+<p id="jobs-text">Jobs supported</p>
+</div>
+
+<div class="metric">
+<h3>+52%</h3>
+<p id="exports-text">Export growth impact</p>
+</div>
+
+<div class="metric">
+<h3>€1M+</h3>
+<p>Cooperation projects implemented</p>
+</div>
+
+<div class="metric">
+<h3>+43%</h3>
+<p>Team productivity growth through tech strategy</p>
+</div>
+
+</div>
 
 </section>
 
-
-<!-- ABOUT -->
-<section class="about">
-    <h2 id="title-profile">Professional Profile</h2>
-<p id="profile-text">
-Investment and Trade Strategist | Data Scientist. Specialist in investment attraction, market analysis, and economic diplomacy. Experience at the World Trade Organization (Geneva), Europe, and Latin America generating investment pipelines exceeding USD 400 million through data intelligence and institutional relationships.
-</p>
-</section>
+<h2>Software & Data Skills</h2>
 
 <section class="skills">
 
 <h2>Software & Data Skills</h2>
 
-<div class="skills-grid">
+<div class="word-cloud">
 
-<div class="skill-box">Salesforce</div>
-<div class="skill-box">Microsoft Suite</div>
-
-<div class="skill-box">Jupyter / JupyterLab / NB Dime</div>
-
-<div class="skill-box">VS Code / Anaconda / Conda</div>
-
-<div class="skill-box">Google Collaboratory</div>
-
-<div class="skill-box">Git / GitHub</div>
-
-<div class="skill-box">Deepnote</div>
-
-<div class="skill-box">Cookiecutter</div>
-
-<div class="skill-box">Python / NLP</div>
-
-<div class="skill-box">Power BI / DAX</div>
-
-<div class="skill-box">Tableau</div>
-
-<div class="skill-box">Looker Studio</div>
-
-<div class="skill-box">Scikit-learn</div>
-
-<div class="skill-box">TensorFlow</div>
-
-<div class="skill-box">PyTorch</div>
-
-<div class="skill-box">SQL</div>
+<span class="big">Python</span>
+<span class="medium">Power BI</span>
+<span class="medium">Tableau</span>
+<span class="big">GitHub</span>
+<span class="small">TensorFlow</span>
+<span class="medium">Scikit-learn</span>
+<span class="medium">SQL</span>
+<span class="small">Deepnote</span>
+<span class="small">Cookiecutter</span>
+<span class="small">Jupyter</span>
+<span class="small">Looker Studio</span>
+<span class="medium">Salesforce</span>
 
 </div>
 
-</section>      
+</section>             
 
-<section class="personal">
+<section class="map-section">
 
-<h2>Personal Information</h2>
+<h2>International Footprint</h2>
 
-<div class="personal-grid">
+<div class="map-controls">
 
-<div class="personal-card">
-<i class="fas fa-user"></i>
-<p>Single, without children</p>
-</div>
-
-<div class="personal-card">
-<i class="fas fa-flag"></i>
-<p>Dual Citizenship: Colombia & Germany (EU)</p>
-</div>
-
-<div class="personal-card">
-<i class="fas fa-car"></i>
-<p>Driving Licenses: Colombia & Germany</p>
-<p>Available to support international delegations and trade missions.</p>
-</div>
+<button onclick="showMap('languages')">Languages</button>
+<button onclick="showMap('work')">Work Authorization</button>
+<button onclick="showMap('experience')">Countries worked</button>
 
 </div>
 
-</section>            
+<img id="map-image" src="assets/map-languages.png">
 
-<section class="maps">
+</section>          
 
-<h2>Work Authorization</h2>
+<script>
 
-<img src="assets/work-permit-map.png" class="map-img">
+function showMap(type){
 
-<p>
-Authorized to work across Latin America through Colombian nationality
-and throughout the European Union through German citizenship.
-</p>
+if(type==="languages"){
+document.getElementById("map-image").src="assets/map-languages.png"
+}
 
-</section>
+if(type==="work"){
+document.getElementById("map-image").src="assets/map-work.png"
+}
 
-<section class="languages">
+if(type==="experience"){
+document.getElementById("map-image").src="assets/map-worked.png"
+}
 
-<h2>Languages</h2>
+}
 
-<img src="assets/language-map.png" class="map-img">
-
-<div class="language-certificates">
-
-<a href="assets/IELTS.pdf" target="_blank">
-<img src="assets/cambridge-logo.png">
-</a>
-
-<a href="assets/DALF.pdf" target="_blank">
-<img src="assets/france-education-logo.jpeg">
-</a>
-
-<a href="assets/TEF.pdf" target="_blank">
-<img src="assets/cci_paris_logo.pdf">
-</a>
-
-</div>
-
-</section>            
-            
+</script>
+</body>
+</html>
+    
 <!-- DOCUMENTS -->
 <section class="documents">
 
-    <h2 id="title-documents">Portfolio & Documentation</h2>
+<h2 id="title-documents">Portfolio & Certifications</h2>
 
-    <div class="hex-grid">
+<div class="hex-grid">
 
-<a href="assets/Camilo Vicaria-Past Projects.pdf" target="_blank" class="hex-item">
+<a href="assets/Camilo Vicaria-Past Projects.pdf" class="hex-item">
 <div class="hex-inner">
 <i class="fas fa-briefcase"></i>
 <span>Portfolio EN</span>
 </div>
 </a>
 
-<a href="assets/CAMILO VICARIA - Proyectos.png" target="_blank" class="hex-item">
+<a href="assets/CAMILO VICARIA - Proyectos.png" class="hex-item">
 <div class="hex-inner">
 <i class="fas fa-folder-open"></i>
 <span>Portafolio ES</span>
 </div>
 </a>
 
-<a href="assets/German CV-Camilo Vicaría.pdf" target="_blank" class="hex-item">
+<a href="assets/German CV-Camilo Vicaría.pdf" class="hex-item">
 <div class="hex-inner">
-<i class="fas fa-file-alt"></i>
-<span>CV Deutsch</span>
+<i class="fas fa-file"></i>
+<span>CV DE</span>
 </div>
 </a>
 
-<a href="assets/cv-portuguese.pdf" target="_blank" class="hex-item">
+<a href="assets/language-certificates.pdf" class="hex-item">
 <div class="hex-inner">
-<span>CV PT</span>
+<i class="fas fa-language"></i>
+<span>Language Certificates</span>
 </div>
 </a>
 
-<a href="assets/cv-mandarin.pdf" target="_blank" class="hex-item">
-<div class="hex-inner">
-<span>CV 中文</span>
-</div>
-</a>
-
-<a href="assets/cv-arabic.pdf" target="_blank" class="hex-item">
-<div class="hex-inner">
-<span>CV عربي</span>
-</div>
-</a>
-
-<a href="assets/cv-russian.pdf" target="_blank" class="hex-item">
-<div class="hex-inner">
-<span>CV Русский</span>
-</div>
-</a>
-
-<a href="assets/cv-japanese.pdf" target="_blank" class="hex-item">
-<div class="hex-inner">
-<span>CV 日本語</span>
-</div>
-</a>
-
-<a href="assets/cv-korean.pdf" target="_blank" class="hex-item">
-<div class="hex-inner">
-<span>CV 한국어</span>
-</div>
-</a>
-
-<a href="assets/Diplomas and Transcripts.pdf" target="_blank" class="hex-item">
+<a href="assets/Diplomas.pdf" class="hex-item">
 <div class="hex-inner">
 <i class="fas fa-graduation-cap"></i>
-<span>Diplomas and Academic Transcripts</span>
+<span>Diplomas</span>
 </div>
 </a>
 
-<a href="assets/References.pdf" target="_blank" class="hex-item">
+<a href="assets/References.pdf" class="hex-item">
 <div class="hex-inner">
 <i class="fas fa-users"></i>
 <span>References</span>
@@ -314,93 +304,81 @@ and throughout the European Union through German citizenship.
 
 </div>
 
-<section class="companies">
+</section>
+    
+<h2>Professional Experience</h2>
+
+<section class="experience">
 
 <h2>Professional Experience</h2>
 
-<div class="logo-carousel">
+<div class="carousel">
 
-<img src="assets/procolombia-logo.png">
-<img src="assets/wto-logo.png">
-<img src="assets/sc-commerce-logo.tiff">
-<img src="assets/baker-mckenzie-logo.png">
+<button class="arrow" onclick="moveCarousel(-1)">❮</button>
+
+<div class="carousel-track">
+
+<div class="logo-box">
+<img src="assets/procolombia.png">
+</div>
+
+<div class="logo-box">
+<img src="assets/wto.png">
+</div>
+
+<div class="logo-box">
+<img src="assets/sc-commerce.png">
+</div>
+
+<div class="logo-box">
+<img src="assets/baker.png">
+</div>
+
+</div>
+
+<button class="arrow" onclick="moveCarousel(1)">❯</button>
 
 </div>
 
 </section>
-
-<section class="certifications">
-
-<h2 id="title-certifications">Other Certifications</h2>
-
-<div class="cert-grid">
-
-<a href="assets/AmericanUniversity-HumanRights.pdf" target="_blank" class="cert-item">
-<i class="fas fa-scale-balanced"></i>
-<span>Human Rights Certificate — American University</span>
-</a>
-
-<a href="assets/TarjetaProfesional-Abogado.pdf" target="_blank" class="cert-item">
-<i class="fas fa-gavel"></i>
-<span>Professional License — Colombian Bar</span>
-</a>
-
-<a href="assets/EmploymentCertificates.pdf" target="_blank" class="cert-item">
-<i class="fas fa-briefcase"></i>
-<span>Employment Certificates</span>
-</a>
-
-</div>
-
-</section>    
 
 <section class="publications">
 
-<h2 id="title-publications">Publications</h2>
+<h2>Publications</h2>
 
-<div class="publication">
+<div class="pub-grid">
 
-<h3>“Marcas en el capítulo de Propiedad Intelectual del TPP: ¿sí o no?”</h3>
+<div class="pub-card">
 
-<p>AMCHAM Business Mail, Issue No.126 — March 2016</p>
+<i class="fas fa-book-open"></i>
+
+<h3>Marcas en el capítulo de Propiedad Intelectual del TPP</h3>
 
 <a href="https://amchamcolombia.wordpress.com/2016/03/31/marcas-en-el-capitulo-de-propiedad-intelectual-del-tpp-si-o-no/" target="_blank">
-Read Article
+
+Read article
+
 </a>
 
 </div>
 
-<div class="publication">
+<div class="pub-card">
 
-<h3>"América Latina: Destino de Inversión en el 2015"</h3>
+<i class="fas fa-newspaper"></i>
 
-<p>AMCHAM Business Mail, Issue No.119 — July 2015</p>
+<h3>América Latina: Destino de Inversión en el 2015</h3>
 
 <a href="https://amchamcolombia.wordpress.com/2015/07/23/america-latina-destino-de-inversion-en-el-2015/" target="_blank">
-Read Article
+
+Read article
+
 </a>
 
 </div>
 
-</section>
-
-<section class="associations">
-
-<h2 id="title-associations">Professional Associations</h2>
-
-<div class="associations-grid">
-
-<a href="https://www.accoldi.org/" target="_blank">
-<img src="assets/accoldi-logo.png">
-</a>
-
-<a href="https://www.juristesfrancocolombiens.com/" target="_blank">
-<img src="assets/juristes-logo.png">
-</a>
-
 </div>
 
-</section>    
+</section> 
     
 <!-- CONTACT -->
 <section class="contact">
@@ -420,6 +398,6 @@ Read Article
     </div>
 
 </section>
-
+    
 </body>
 </html>
