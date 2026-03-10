@@ -15,6 +15,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
+<script>
+
+function setLanguage(lang){
+
+if(lang==="es"){
+
+document.getElementById("title-profile").innerText="Perfil Profesional"
+document.getElementById("title-documents").innerText="Portafolio y Documentación"
+document.getElementById("title-contact").innerText="Contacto"
+document.getElementById("title-certifications").innerText="Otras Certificaciones"
+document.getElementById("title-publications").innerText="Publicaciones"
+document.getElementById("title-associations").innerText="Asociaciones Profesionales"
+
+document.getElementById("capital-text").innerText="Capital atraído"
+document.getElementById("jobs-text").innerText="Empleos apoyados"
+document.getElementById("exports-text").innerText="Impacto en exportaciones"
+
+document.getElementById("profile-text").innerText=
+"Estratega en inversión y comercio internacional especializado en atracción de inversión extranjera, análisis de mercados y diplomacia económica. Experiencia en la Organización Mundial del Comercio en Ginebra, Europa y América Latina generando portafolios de inversión superiores a USD 400 millones mediante inteligencia de datos y relaciones institucionales."
+
+}
+
+if(lang==="fr"){
+
+document.getElementById("title-profile").innerText="Profil Professionnel"
+document.getElementById("title-documents").innerText="Portefeuille et Documentation"
+document.getElementById("title-contact").innerText="Contact"
+
+}
+
+if(lang==="it"){
+
+document.getElementById("title-profile").innerText="Profilo Professionale"
+document.getElementById("title-documents").innerText="Portfolio e Documentazione"
+
+}
+
+if(lang==="de"){
+
+document.getElementById("title-profile").innerText="Berufsprofil"
+document.getElementById("title-documents").innerText="Portfolio und Dokumentation"
+
+}
+
+if(lang==="en"){
+
+document.getElementById("title-profile").innerText="Professional Profile"
+document.getElementById("title-documents").innerText="Portfolio & Documentation"
+
+}
+
+}
+
+</script>
+    
 <body>
 
 <!-- HERO -->
@@ -23,18 +78,26 @@
 
         <div class="hexagon">
             <img src="assets/Camilo Vicaria.jpeg" alt="Camilo Vicaría">
-        </div>
+<div class="cv-buttons">
+    <a href="assets/Camilo Vicaría CV EN 2026.pdf" target="_blank" class="primary-btn">
+        Download CV (EN)
+    </a>
 
-        <h1>Camilo Vicaría</h1>
-        <p class="subtitle">
-            Foreign Direct Investment Officer | International Trade & Regulatory Affairs | Multilingual Executive (EN · ES · DE · FR · IT)
-        </p>
+    <a href="assets/Camilo Vicaría CV ES.pdf" target="_blank" class="primary-btn">
+        Descargar CV (ES)
+    </a>
+</div>
 
-        <a href="assets/Camilo Vicaría CV EN - Dec 2025.pdf" target="_blank" class="primary-btn">
-            Download CV (EN)
-        </a>
+<div class="language-switch">
 
-    </div>
+<button onclick="setLanguage('en')">EN</button>
+<button onclick="setLanguage('es')">ES</button>
+<button onclick="setLanguage('fr')">FR</button>
+<button onclick="setLanguage('it')">IT</button>
+<button onclick="setLanguage('de')">DE</button>
+
+</div>
+            
 </section>
 
 
@@ -43,17 +106,17 @@
 
     <div class="highlight-box">
         <h2>$423M+</h2>
-        <p>Capital attracted</p>
+        <p id="capital-text">Capital attracted</p>
     </div>
 
     <div class="highlight-box">
         <h2>1,286</h2>
-        <p>Jobs supported</p>
+        <p id="jobs-text">Jobs supported</p>
     </div>
 
     <div class="highlight-box">
         <h2>+52%</h2>
-        <p>Export growth impact</p>
+        <p id="exports-text">Export growth impact</p>
     </div>
 
 </section>
@@ -61,65 +124,288 @@
 
 <!-- ABOUT -->
 <section class="about">
-    <h2>Professional Profile</h2>
-    <p>
-        Proficient in Data Science, SQL, Python and Github. Fluent in English, Spanish, Italian, German and French. International business development and investment promotion professional with experience across Europe and Latin America. 
-        Background in WTO legal affairs, FDI attraction, regulatory cooperation and international trade policy. 
-        Proven ability to attract capital, structure cross-border expansion strategies and build institutional partnerships.
-    </p>
+    <h2 id="title-profile">Professional Profile</h2>
+<p id="profile-text">
+Investment and Trade Strategist | Data Scientist. Specialist in investment attraction, market analysis, and economic diplomacy. Experience at the World Trade Organization (Geneva), Europe, and Latin America generating investment pipelines exceeding USD 400 million through data intelligence and institutional relationships.
+</p>
 </section>
 
+<section class="skills">
 
+<h2>Software & Data Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-box">Salesforce</div>
+<div class="skill-box">Microsoft Suite</div>
+
+<div class="skill-box">Jupyter / JupyterLab / NB Dime</div>
+
+<div class="skill-box">VS Code / Anaconda / Conda</div>
+
+<div class="skill-box">Google Collaboratory</div>
+
+<div class="skill-box">Git / GitHub</div>
+
+<div class="skill-box">Deepnote</div>
+
+<div class="skill-box">Cookiecutter</div>
+
+<div class="skill-box">Python / NLP</div>
+
+<div class="skill-box">Power BI / DAX</div>
+
+<div class="skill-box">Tableau</div>
+
+<div class="skill-box">Looker Studio</div>
+
+<div class="skill-box">Scikit-learn</div>
+
+<div class="skill-box">TensorFlow</div>
+
+<div class="skill-box">PyTorch</div>
+
+<div class="skill-box">SQL</div>
+
+</div>
+
+</section>      
+
+<section class="personal">
+
+<h2>Personal Information</h2>
+
+<div class="personal-grid">
+
+<div class="personal-card">
+<i class="fas fa-user"></i>
+<p>Single, without children</p>
+</div>
+
+<div class="personal-card">
+<i class="fas fa-flag"></i>
+<p>Dual Citizenship: Colombia & Germany (EU)</p>
+</div>
+
+<div class="personal-card">
+<i class="fas fa-car"></i>
+<p>Driving Licenses: Colombia & Germany</p>
+<p>Available to support international delegations and trade missions.</p>
+</div>
+
+</div>
+
+</section>            
+
+<section class="maps">
+
+<h2>Work Authorization</h2>
+
+<img src="assets/work-permit-map.png" class="map-img">
+
+<p>
+Authorized to work across Latin America through Colombian nationality
+and throughout the European Union through German citizenship.
+</p>
+
+</section>
+
+<section class="languages">
+
+<h2>Languages</h2>
+
+<img src="assets/language-map.png" class="map-img">
+
+<div class="language-certificates">
+
+<a href="assets/IELTS.pdf" target="_blank">
+<img src="assets/cambridge-logo.png">
+</a>
+
+<a href="assets/DALF.pdf" target="_blank">
+<img src="assets/france-education-logo.jpeg">
+</a>
+
+<a href="assets/TEF.pdf" target="_blank">
+<img src="assets/cci_paris_logo.pdf">
+</a>
+
+</div>
+
+</section>            
+            
 <!-- DOCUMENTS -->
 <section class="documents">
 
-    <h2>Portfolio & Documentation</h2>
+    <h2 id="title-documents">Portfolio & Documentation</h2>
 
     <div class="hex-grid">
 
-        <a href="assets/Camilo Vicaria-Past Projects.pdf" target="_blank" class="hex-item">
-            <div class="hex-inner">
-                <i class="fas fa-briefcase"></i>
-                <span>Portfolio EN</span>
-            </div>
-        </a>
+<a href="assets/Camilo Vicaria-Past Projects.pdf" target="_blank" class="hex-item">
+<div class="hex-inner">
+<i class="fas fa-briefcase"></i>
+<span>Portfolio EN</span>
+</div>
+</a>
 
-        <a href="assets/CAMILO VICARIA - Proyectos.png" target="_blank" class="hex-item">
-            <div class="hex-inner">
-                <i class="fas fa-folder-open"></i>
-                <span>Portafolio ES</span>
-            </div>
-        </a>
+<a href="assets/CAMILO VICARIA - Proyectos.png" target="_blank" class="hex-item">
+<div class="hex-inner">
+<i class="fas fa-folder-open"></i>
+<span>Portafolio ES</span>
+</div>
+</a>
 
-        <a href="assets/CV ESP Camilo Vicaría Octubre 2025.pdf" target="_blank" class="hex-item">
-            <div class="hex-inner">
-                <i class="fas fa-file-alt"></i>
-                <span>CV Español</span>
-            </div>
-        </a>
+<a href="assets/German CV-Camilo Vicaría.pdf" target="_blank" class="hex-item">
+<div class="hex-inner">
+<i class="fas fa-file-alt"></i>
+<span>CV Deutsch</span>
+</div>
+</a>
 
-        <a href="assets/German CV-Camilo Vicaría.pdf" target="_blank" class="hex-item">
-            <div class="hex-inner">
-                <i class="fas fa-file-alt"></i>
-                <span>Lebenslauf DE</span>
-            </div>
-        </a>
+<a href="assets/cv-portuguese.pdf" target="_blank" class="hex-item">
+<div class="hex-inner">
+<span>CV PT</span>
+</div>
+</a>
 
-        <a href="assets/References.pdf" target="_blank" class="hex-item">
-            <div class="hex-inner">
-                <i class="fas fa-users"></i>
-                <span>References</span>
-            </div>
-        </a>
+<a href="assets/cv-mandarin.pdf" target="_blank" class="hex-item">
+<div class="hex-inner">
+<span>CV 中文</span>
+</div>
+</a>
 
-    </div>
+<a href="assets/cv-arabic.pdf" target="_blank" class="hex-item">
+<div class="hex-inner">
+<span>CV عربي</span>
+</div>
+</a>
+
+<a href="assets/cv-russian.pdf" target="_blank" class="hex-item">
+<div class="hex-inner">
+<span>CV Русский</span>
+</div>
+</a>
+
+<a href="assets/cv-japanese.pdf" target="_blank" class="hex-item">
+<div class="hex-inner">
+<span>CV 日本語</span>
+</div>
+</a>
+
+<a href="assets/cv-korean.pdf" target="_blank" class="hex-item">
+<div class="hex-inner">
+<span>CV 한국어</span>
+</div>
+</a>
+
+<a href="assets/Diplomas and Transcripts.pdf" target="_blank" class="hex-item">
+<div class="hex-inner">
+<i class="fas fa-graduation-cap"></i>
+<span>Diplomas and Academic Transcripts</span>
+</div>
+</a>
+
+<a href="assets/References.pdf" target="_blank" class="hex-item">
+<div class="hex-inner">
+<i class="fas fa-users"></i>
+<span>References</span>
+</div>
+</a>
+
+</div>
+
+<section class="companies">
+
+<h2>Professional Experience</h2>
+
+<div class="logo-carousel">
+
+<img src="assets/procolombia-logo.png">
+<img src="assets/wto-logo.png">
+<img src="assets/sc-commerce-logo.tiff">
+<img src="assets/baker-mckenzie-logo.png">
+
+</div>
+
 </section>
 
+<section class="certifications">
 
+<h2 id="title-certifications">Other Certifications</h2>
+
+<div class="cert-grid">
+
+<a href="assets/AmericanUniversity-HumanRights.pdf" target="_blank" class="cert-item">
+<i class="fas fa-scale-balanced"></i>
+<span>Human Rights Certificate — American University</span>
+</a>
+
+<a href="assets/TarjetaProfesional-Abogado.pdf" target="_blank" class="cert-item">
+<i class="fas fa-gavel"></i>
+<span>Professional License — Colombian Bar</span>
+</a>
+
+<a href="assets/EmploymentCertificates.pdf" target="_blank" class="cert-item">
+<i class="fas fa-briefcase"></i>
+<span>Employment Certificates</span>
+</a>
+
+</div>
+
+</section>    
+
+<section class="publications">
+
+<h2 id="title-publications">Publications</h2>
+
+<div class="publication">
+
+<h3>“Marcas en el capítulo de Propiedad Intelectual del TPP: ¿sí o no?”</h3>
+
+<p>AMCHAM Business Mail, Issue No.126 — March 2016</p>
+
+<a href="https://amchamcolombia.wordpress.com/2016/03/31/marcas-en-el-capitulo-de-propiedad-intelectual-del-tpp-si-o-no/" target="_blank">
+Read Article
+</a>
+
+</div>
+
+<div class="publication">
+
+<h3>"América Latina: Destino de Inversión en el 2015"</h3>
+
+<p>AMCHAM Business Mail, Issue No.119 — July 2015</p>
+
+<a href="https://amchamcolombia.wordpress.com/2015/07/23/america-latina-destino-de-inversion-en-el-2015/" target="_blank">
+Read Article
+</a>
+
+</div>
+
+</section>
+
+<section class="associations">
+
+<h2 id="title-associations">Professional Associations</h2>
+
+<div class="associations-grid">
+
+<a href="https://www.accoldi.org/" target="_blank">
+<img src="assets/accoldi-logo.png">
+</a>
+
+<a href="https://www.juristesfrancocolombiens.com/" target="_blank">
+<img src="assets/juristes-logo.png">
+</a>
+
+</div>
+
+</section>    
+    
 <!-- CONTACT -->
 <section class="contact">
 
-    <h2>Contact</h2>
+    <h2 id="title-contact">Contact</h2>
 
     <div class="contact-links">
 
