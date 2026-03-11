@@ -328,16 +328,15 @@ max-width:900px;
 margin:auto;
 margin-top:40px;
 }
+.publications,
+.associations,
+.moments,
+.contact{
 
-.pub-card{
-background:#1f3b4a;
-padding:25px;
-border-radius:10px;
-}
+padding:80px 20px;
+margin:0 auto;
+max-width:1200px;
 
-.pub-card i{
-font-size:26px;
-margin-bottom:10px;
 }
 
 /* ASSOCIATIONS */
@@ -402,76 +401,16 @@ height:80px;
 .experience-logos{
 display:flex;
 justify-content:center;
-gap:60px;
-flex-wrap:wrap;
-margin-top:40px;
-}
-
-.experience-logos img{
-max-height:70px;
-max-width:180px;
-object-fit:contain;
-background:white;
-padding:10px;
-border-radius:6px;
-}
-
-.experience{
-overflow:hidden;
-}
-
-.experience-logos{
-display:flex;
-justify-content:center;
 align-items:center;
 gap:60px;
 flex-wrap:wrap;
-max-width:100%;
 }
 
 .experience-logos img{
-max-height:70px;
-max-width:180px;
-object-fit:contain;
-}
-.logo-slider{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:20px;
-margin-top:40px;
+height:60px;
+filter:brightness(0) invert(1);
 }
 
-.logo-track{
-width:200px;
-height:120px;
-display:flex;
-align-items:center;
-justify-content:center;
-}
-
-.logo-track img{
-max-height:90px;
-max-width:200px;
-object-fit:contain;
-}
-
-.arrow{
-background:none;
-border:none;
-font-size:28px;
-color:white;
-cursor:pointer;
-}
-.pub-card a{
-color:white;
-font-weight:600;
-text-decoration:none;
-}
-
-.pub-card a:hover{
-text-decoration:underline;
-}
 .gallery-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -486,8 +425,8 @@ border-radius:10px;
 box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 .contact{
-background:#0f2027;
-border-top:1px solid rgba(255,255,255,0.1);
+padding-bottom:80px;
+margin-bottom:0;
 }
 
 .moments{
