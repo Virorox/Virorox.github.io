@@ -14,7 +14,7 @@
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<head>
+
 <meta charset="UTF-8">    
 <meta name="description" content="International Investment & Trade Strategist specialized in FDI attraction, economic diplomacy and data-driven investment strategy across Europe and Latin America.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@ function setLanguage(lang){
 if(lang==="es"){
 
 document.getElementById("title-about").innerText="Sobre mí"
-
+document.getElementById("title-documents").innerText="Documentos" 
 document.getElementById("about1").innerText="Doble ciudadanía: Colombia y Alemania"
 document.getElementById("about2").innerText="Soltero, sin hijos"
 document.getElementById("about3").innerText="Licencia de conducción: Colombia y Alemania"
@@ -42,7 +42,7 @@ document.getElementById("title-results").innerText="Resultados Destacados"
 document.getElementById("capital-text").innerText="Capital atraído"
 document.getElementById("jobs-text").innerText="Empleos apoyados"
 document.getElementById("exports-text").innerText="Impacto en exportaciones"
-
+document.getElementById("cooperation-text").innerText="Proyectos de cooperación implementados"
 document.getElementById("title-skills").innerText="Software y Herramientas de Datos"
 
 document.getElementById("title-map").innerText="Trayectoria Internacional"
@@ -83,7 +83,7 @@ document.getElementById("title-results").innerText="Résultats remarquables"
 document.getElementById("capital-text").innerText="Capital attiré"
 document.getElementById("jobs-text").innerText="Emplois créés"
 document.getElementById("exports-text").innerText="Augmentation des exportations"
-
+document.getElementById("cooperation-text").innerText="Projets de coopération mis en œuvre"
 document.getElementById("title-skills").innerText="Logiciels et outils de données"
 
 document.getElementById("title-map").innerText="Parcours international"
@@ -102,6 +102,7 @@ document.getElementById("read-article-2").innerText="Lire l'article"
 document.getElementById("title-associations").innerText="Associations professionnelles"
 document.getElementById("title-photos").innerText="Galerie photos" 
 document.getElementById("title-contact").innerText="Contact"
+document.getElementById("title-documents").innerText="Documentation"    
 }
 
 if(lang==="it"){
@@ -124,7 +125,7 @@ document.getElementById("title-results").innerText="Risultati salienti"
 document.getElementById("capital-text").innerText="Capitale attratto"
 document.getElementById("jobs-text").innerText="Posti di lavoro creati"
 document.getElementById("exports-text").innerText="Aumento delle esportazioni"
-
+document.getElementById("cooperation-text").innerText="Progetti di cooperazione realizzati"
 document.getElementById("title-skills").innerText="Software e strumenti per i dati"
 
 document.getElementById("title-map").innerText="Carriera internazionale"
@@ -143,6 +144,7 @@ document.getElementById("read-article-2").innerText="Leggi l'articolo"
 document.getElementById("title-associations").innerText="Associazioni professionali"
 document.getElementById("title-photos").innerText="Galleria fotografica" 
 document.getElementById("title-contact").innerText="Contatto"
+document.getElementById("title-documents").innerText="Portfolio e documenti"    
 }
 
 if(lang==="de"){
@@ -167,7 +169,7 @@ document.getElementById("capital-text").innerText="Angezogenes Kapital"
 document.getElementById("jobs-text").innerText="Geschaffene Arbeitsplätze"
 document.getElementById("exports-text").innerText="Steigende Exporte"
 document.getElementById("title-skills").innerText="Software und Datentools"
-
+document.getElementById("cooperation-text").innerText="Durchgeführte Kooperationsprojekte"
 document.getElementById("title-map").innerText="Internationale Karriere"
 
 document.getElementById("map-btn1").innerText="Sprachen"
@@ -182,7 +184,7 @@ document.getElementById("title-contact").innerText="Kontakt"
 if(lang==="en"){
 
 document.getElementById("title-about").innerText="About Me"
-
+document.getElementById("title-documents").innerText="Portfolio and Documents"
 document.getElementById("about1").innerText="Dual citizen: Colombia & Germany"
 document.getElementById("about2").innerText="Single, no children"
 document.getElementById("about3").innerText="Driving license: Colombia & Germany"
@@ -199,7 +201,7 @@ document.getElementById("title-results").innerText="Results Snapshot"
 document.getElementById("capital-text").innerText="Capital attracted"
 document.getElementById("jobs-text").innerText="Jobs supported"
 document.getElementById("exports-text").innerText="Export growth impact"
-
+document.getElementById("cooperation-text").innerText="Cooperation projects implemented"
 document.getElementById("title-skills").innerText="Software & Data Skills"
 
 document.getElementById("title-map").innerText="International Footprint"
@@ -257,7 +259,6 @@ document.getElementById("lightbox").style.display="none"
 
 </script>
  
-<body>
 <header class="topbar">
 
 <div class="logo-name">
@@ -273,7 +274,9 @@ Camilo Vicaría
 <button onclick="setLanguage('it')">IT</button>
 
 </div>
-
+</script>
+</head>
+<body>
 </header>
     
 <!-- HERO -->
@@ -356,7 +359,7 @@ Investment and Trade Strategist | Data Scientist specialized in investment attra
 
 <div class="metric">
 <h3>€1M+</h3>
-<p>Cooperation projects implemented</p>
+<p id="cooperation-text">Cooperation projects implemented</p>
 </div>
 
 </div>
@@ -365,7 +368,7 @@ Investment and Trade Strategist | Data Scientist specialized in investment attra
 
 <section class="skills">
 
-<h2>Software & Data Skills</h2>
+<h2 id="title-skills">Software & Data Skills</h2>
 
 <div class="word-cloud">
 
@@ -391,7 +394,7 @@ Investment and Trade Strategist | Data Scientist specialized in investment attra
 
 <section class="map-section">
 
-<h2>International Footprint</h2>
+<h2 id="title-map">International Footprint</h2>
 
 <div class="map-controls">
 
@@ -503,20 +506,12 @@ document.getElementById("map-image").src="assets/map-worked.png"
 
 <h2 id="title-experience">Professional Experience</h2>
 
-<div class="logo-slider">
-
-<button class="arrow" onclick="moveSlide(-1)">❮</button>
-
-<div class="logo-track">
+<div class="experience-logos">
 
 <img src="assets/procolombia-logo.png">
 <img src="assets/wto-logo.png">
 <img src="assets/sc-commerce-logo.png">
 <img src="assets/baker-mckenzie-logo.png">
-
-</div>
-
-<button class="arrow" onclick="moveSlide(1)">❯</button>
 
 </div>
 
