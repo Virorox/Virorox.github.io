@@ -224,70 +224,45 @@ document.getElementById("title-contact").innerText="Contact"
 </script>
 <script>
 
-let currentLogo=0
-
-const logos=[
-"assets/procolombia-logo.png",
-"assets/wto-logo.png",
-"assets/sc-commerce-logo.png",
-"assets/baker-mckenzie-logo.png"
-]
-
-function moveSlide(direction){
-
-currentLogo += direction
-
-if(currentLogo<0){currentLogo=logos.length-1}
-if(currentLogo>=logos.length){currentLogo=0}
-
-document.querySelector(".logo-track img").src=logos[currentLogo]
-
-}
-
-</script>  
-
 <script>
 
-let photoIndex = 0
+let photoIndex=0
 
-const photos = [
-"assets/Trabajo1.jpeg",
-"assets/Trabajo2.jpeg",
-"assets/Trabajo3.jpeg",
-"assets/Trabajo4.jpeg"
-"assets/Trabajo5.jpeg"    
+const photos=[
+"assets/Trabajo1.jpg",
+"assets/Trabajo2.jpg",
+"assets/Trabajo3.jpg",
+"assets/Trabajo4.jpg"
+"assets/Trabajo5.jpg"    
 ]
 
 function movePhoto(direction){
 
-photoIndex += direction
+photoIndex+=direction
 
-if(photoIndex < 0){
-photoIndex = photos.length - 1
-}
+if(photoIndex<0){photoIndex=photos.length-1}
+if(photoIndex>=photos.length){photoIndex=0}
 
-if(photoIndex >= photos.length){
-photoIndex = 0
-}
-
-document.getElementById("carousel-photo").src = photos[photoIndex]
+document.getElementById("carousel-photo").src=photos[photoIndex]
 
 }
 
-</script>   
+</script>
 
 function openLightbox(img){
-
 document.getElementById("lightbox").style.display="flex"
 document.getElementById("lightbox-img").src=img.src
-
 }
 
 function closeLightbox(){
-
 document.getElementById("lightbox").style.display="none"
+}
 
-}    
+</script>
+}
+
+</script>   
+ 
 <body>
 <header class="topbar">
 
@@ -529,9 +504,6 @@ document.getElementById("map-image").src="assets/map-worked.png"
 </div>
 
 </section>
-<section class="experience">
-
-<h2 id="title-experience">Professional Experience</h2>
 
 <section class="experience">
 
@@ -558,7 +530,7 @@ document.getElementById("map-image").src="assets/map-worked.png"
 
 <section class="publications">
 
-<h2>Publications</h2>
+<h2 id="title-publications">Publications</h2>
 
 <div class="pub-grid">
 
@@ -636,7 +608,7 @@ document.getElementById("map-image").src="assets/map-worked.png"
 <!-- CONTACT -->
 <section class="contact">
 
-    <h2 id="title-contact">Contact</h2>
+<h2 id="title-contact">Contact</h2>
 
     <div class="contact-links">
 
