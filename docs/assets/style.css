@@ -437,3 +437,37 @@ max-width:90%;
 }
 
 }
+.experience-logos img{
+height:70px;
+max-width:140px;
+object-fit:contain;
+filter:brightness(0) invert(1);
+}
+
+@media(max-width:768px){
+
+.experience-logos{
+gap:25px;
+}
+
+.experience-logos img{
+height:50px;
+max-width:100px;
+}
+
+}
+.moments-gallery{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:40px;
+margin-top:40px;
+}
+
+.moments-gallery img{
+max-width:800px;
+width:90%;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+cursor:pointer;
+}
