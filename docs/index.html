@@ -140,7 +140,8 @@ document.getElementById("read-article-2").innerText="Leggi l'articolo"
 
 document.getElementById("title-associations").innerText="Associazioni professionali"
 document.getElementById("title-photos").innerText="Galleria fotografica" 
-document.getElementById("title-contact").innerText="Contatto"}
+document.getElementById("title-contact").innerText="Contatto"
+}
 
 if(lang==="de"){
 
@@ -216,12 +217,77 @@ document.getElementById("title-associations").innerText="Professional Associatio
 document.getElementById("title-photos").innerText="Photos" 
 document.getElementById("title-contact").innerText="Contact"
 
-}}
+}
 
 }
 
 </script>
-    
+<script>
+
+let currentLogo=0
+
+const logos=[
+"assets/procolombia-logo.png",
+"assets/wto-logo.png",
+"assets/sc-commerce-logo.png",
+"assets/baker-mckenzie-logo.png"
+]
+
+function moveSlide(direction){
+
+currentLogo += direction
+
+if(currentLogo<0){currentLogo=logos.length-1}
+if(currentLogo>=logos.length){currentLogo=0}
+
+document.querySelector(".logo-track img").src=logos[currentLogo]
+
+}
+
+</script>  
+
+<script>
+
+let photoIndex = 0
+
+const photos = [
+"assets/Trabajo1.jpeg",
+"assets/Trabajo2.jpeg",
+"assets/Trabajo3.jpeg",
+"assets/Trabajo4.jpeg"
+"assets/Trabajo5.jpeg"    
+]
+
+function movePhoto(direction){
+
+photoIndex += direction
+
+if(photoIndex < 0){
+photoIndex = photos.length - 1
+}
+
+if(photoIndex >= photos.length){
+photoIndex = 0
+}
+
+document.getElementById("carousel-photo").src = photos[photoIndex]
+
+}
+
+</script>   
+
+function openLightbox(img){
+
+document.getElementById("lightbox").style.display="flex"
+document.getElementById("lightbox-img").src=img.src
+
+}
+
+function closeLightbox(){
+
+document.getElementById("lightbox").style.display="none"
+
+}    
 <body>
 <header class="topbar">
 
@@ -260,15 +326,15 @@ Camilo Vicaría
 
 <ul class="about-list">
 
-<li>Dual citizen: Colombia & Germany</li>
+<li id="about1">🌍 Dual citizen: Colombia & Germany</li>
 
-<li>Single, no children</li>
+<li id="about2">👤 Single, no children</li>
 
-<li>Driving license: Colombia & Germany</li>
+<li id="about3">🚗 Driving license: Colombia & Germany</li>
 
-<li>Experience in the World Trade Organization and across Europe & Latin America</li>
+<li id="about4">✈️ Experience in the World Trade Organization, across Europe & Latin America</li>
 
-<li>Multilingual: EN · ES · DE · FR · IT</li>
+<li id="about5">🗣 Multilingual: 🇬🇧 EN ·  🇪🇸 ES · 🇩🇪 DE · 🇫🇷 FR · 🇮🇹 IT</li>
 
 </ul>
 <div class="cv-buttons">
@@ -328,8 +394,6 @@ Investment and Trade Strategist | Data Scientist specialized in investment attra
 
 </section>
 
-<h2>Software & Data Skills</h2>
-
 <section class="skills">
 
 <h2>Software & Data Skills</h2>
@@ -368,7 +432,7 @@ Investment and Trade Strategist | Data Scientist specialized in investment attra
 
 </div>
 
-<img id="map-image" src="assets/map-languages.png">
+<img id="map-image" src="assets/language-map.png">
 
 </section>          
 
@@ -469,12 +533,24 @@ document.getElementById("map-image").src="assets/map-worked.png"
 
 <h2 id="title-experience">Professional Experience</h2>
 
-<div class="experience-logos">
+<section class="experience">
+
+<h2 id="title-experience">Professional Experience</h2>
+
+<div class="logo-slider">
+
+<button class="arrow" onclick="moveSlide(-1)">❮</button>
+
+<div class="logo-track">
 
 <img src="assets/procolombia-logo.png">
 <img src="assets/wto-logo.png">
 <img src="assets/sc-commerce-logo.png">
 <img src="assets/baker-mckenzie-logo.png">
+
+</div>
+
+<button class="arrow" onclick="moveSlide(1)">❯</button>
 
 </div>
 
@@ -535,25 +611,27 @@ document.getElementById("map-image").src="assets/map-worked.png"
 
 </section>
 
-<section class="career-gallery">
+<section class="moments">
 
-<h2 id="title-photos">Professional Moments</h2>    
+<h2 id="title-photos">Professional Moments</h2>
 
-<div class="gallery-grid">
+<div class="photo-carousel">
 
-<img src="assets/Trabajo1.jpeg">
+<button class="arrow" onclick="movePhoto(-1)">❮</button>
 
-<img src="assets/Trabajo2.jpeg">
+<div class="photo-frame">
+<img id="carousel-photo" src="assets/Trabajo1.jpeg" onclick="openLightbox(this)">
+</div>
 
-<img src="assets/Trabajo3.jpeg">
-
-<img src="assets/Trabajo4.jpeg">
-
-<img src="assets/Trabajo5.jpeg">    
+<button class="arrow" onclick="movePhoto(1)">❯</button>
 
 </div>
 
 </section>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>    
     
 <!-- CONTACT -->
 <section class="contact">
