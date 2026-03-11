@@ -223,7 +223,7 @@ document.getElementById("title-contact").innerText="Contact"
 
 }
 
-}
+</script>
 
 <script>
 
@@ -248,6 +248,10 @@ document.getElementById("carousel-photo").src=photos[photoIndex]
 
 }
 
+</script>
+
+<script>
+
 function openLightbox(img){
 document.getElementById("lightbox").style.display="flex"
 document.getElementById("lightbox-img").src=img.src
@@ -258,7 +262,10 @@ document.getElementById("lightbox").style.display="none"
 }
 
 </script>
- 
+</head>
+
+<body>
+
 <header class="topbar">
 
 <div class="logo-name">
@@ -274,7 +281,6 @@ Camilo Vicaría
 <button onclick="setLanguage('it')">IT</button>
 
 </div>
-</script>
 </head>
 <body>
 </header>
@@ -510,7 +516,7 @@ document.getElementById("map-image").src="assets/map-worked.png"
 
 <img src="assets/procolombia-logo.png">
 <img src="assets/wto-logo.png">
-<img src="assets/sc-commerce-logo.png">
+<img src="assets/Seal_of_South_Carolina.svg.png">
 <img src="assets/baker-mckenzie-logo.png">
 
 </div>
@@ -576,15 +582,13 @@ document.getElementById("map-image").src="assets/map-worked.png"
 
 <h2 id="title-photos">Professional Moments</h2>
 
-<div class="photo-carousel">
+<div class="moments-gallery">
 
-<button class="arrow" onclick="movePhoto(-1)">❮</button>
-
-<div class="photo-frame">
-<img id="carousel-photo" src="assets/Trabajo1.jpeg" onclick="openLightbox(this)">
-</div>
-
-<button class="arrow" onclick="movePhoto(1)">❯</button>
+<img src="assets/Trabajo1.jpeg" onclick="openLightbox(this)">
+<img src="assets/Trabajo2.jpeg" onclick="openLightbox(this)">
+<img src="assets/Trabajo3.jpeg" onclick="openLightbox(this)">
+<img src="assets/Trabajo4.jpeg" onclick="openLightbox(this)">
+<img src="assets/Trabajo5.jpeg" onclick="openLightbox(this)">
 
 </div>
 
@@ -612,6 +616,8 @@ document.getElementById("map-image").src="assets/map-worked.png"
     </div>
 
 </section>
-    
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>    
 </body>
 </html>
